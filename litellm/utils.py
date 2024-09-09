@@ -3497,8 +3497,6 @@ def get_optional_params(
             optional_params["seed"] = seed
         if top_p is not None:
             optional_params["top_p"] = top_p
-        if frequency_penalty is not None:
-            optional_params["repeat_penalty"] = frequency_penalty
         if stop is not None:
             optional_params["stop"] = stop
         if response_format is not None and response_format["type"] == "json_object":
